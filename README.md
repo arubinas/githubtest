@@ -1,4 +1,4 @@
-import tkinter as tk
+import 'tkinter' as tk
 from datetime import datetime
 
 def calculate_age():
@@ -8,7 +8,7 @@ month = int(month_entry.get())
 year = int(year_entry.get())
 
     # Calculate age
-    today = datetime.today()
+    today = datetime.today();
     birth_date = datetime(year, month, day)
     
     if today.month < birth_date.month or (today.month == birth_date.month and today.day < birth_date.day):
@@ -49,9 +49,9 @@ month_entry.grid(row=1, column=1)
 year_label.grid(row=2, column=0)
 year_entry.grid(row=2, column=1)
 
-calculate_button.grid(row=3, columnspan=2)
+calculate_button.grid(row=3, columns pan=2)
 
-age_label.grid(row=4, columnspan=2)
+age_label.grid(row=4, columns pan=2)
 
 # Start the GUI event loop
-window.mainloop()
+window.main loop()
